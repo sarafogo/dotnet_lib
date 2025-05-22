@@ -1,0 +1,10 @@
+name: CI Library
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+   
+jobs:
+  use-reusable-workflow:
+    uses: sarafogo/pipeline_templates/.github/workflows/dotnet_library.yml@main
